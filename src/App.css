@@ -56,7 +56,7 @@ h1,h2,h3,h4,h5,h6{
 nav.navbar {
   padding: 18px 0;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
@@ -250,13 +250,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner Css ************/
 .banner {
-  margin-top: 0;
   padding: 260px 0 100px 0;
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
-  height: 110vh;
-  width: 100vw;
+  height: 100vh;
+  width: 100%;
   background-repeat: no-repeat;
 }
 .banner .tagline {
@@ -348,11 +347,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* skills */
 
-/* skills */
-
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background-color: black;
+  z-index: 11111;
 }
 .skill-bx {
   background: #151515;
@@ -385,18 +384,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .background-image-left {
   position: absolute;
-  top: 0; 
-  left: 0;
-  z-index: 111111;
+  top: 32%;
   z-index: -4;
-  width: 100%;
+  width: 60%;
   max-width: 800px;
-  height: auto; 
+  height: 90%;
+  left: 0;
 }
 
 
 .item h5{
   color:white;
+}
+
+.skill-bx wow zoomIn{
+position: relative;
+z-index: 1111;
 }
 
 /* project */
@@ -626,7 +629,7 @@ project-section{
 
 /************ Footer Css ************/
 .footer {
-  padding: 150px 0 35px 0;
+  padding: 190px 0 35px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
@@ -651,14 +654,14 @@ project-section{
 }
 .new-email-bx {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background: #fff;
   border-radius: 5px;
   padding: 5px;
   overflow: hidden;
 }
-.new-email-bx::before {
+/* .new-email-bx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   border-radius: 20px;
@@ -679,23 +682,35 @@ project-section{
   left: 0;
   bottom: 0;
   right: 0;
-}
+} */
+
 .new-email-bx input {
   width: 100%;
   color: #121212;
   font-weight: 500;
   background: transparent;
   border: 0;
-  margin: 0px 10px 10px 0px;
+  padding: 12px;
+  border-radius: 8px;
+  outline: none;
 }
-.new-email-bx button {
+.new-email-button {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 20px 65px;
+  padding: 15px 45px;
   color: #fff;
   font-weight: 500;
+  border:none;
+  cursor: pointer;
+  display: block;
+  margin : 3px 0px 0 5px;
   letter-spacing: 0.5px;
   border-radius: 18px;
 }
+
+#news-form{
+  margin-left:170px;
+}
+
 .footer img {
   width: 26%;
 }
@@ -753,6 +768,9 @@ project-section{
   .contact form button {
     margin-left: 57px;
   }
+  #news-form{
+    margin-left:70px;
+  }
   
 }
 
@@ -797,6 +815,9 @@ project-section{
   }
   .contact form button {
     margin-left: 57px;
+  }
+  #news-form{
+    margin-left:7px;
   }
 }
 
@@ -843,6 +864,9 @@ project-section{
   }
   .contact form button {
     margin-left: 57px;
+  }
+  #news-form{
+    margin-left:70px;
   }
 }
 

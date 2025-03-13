@@ -15,7 +15,7 @@ export const Newsletter = () => {
               <h3>Subscribe to our Newsletter And Never Miss Out Any Updates</h3>
             </Col>
             <Col lg={6} sm={4}>
-              <form>
+              <form id="news-form">
                 <div className="new-email-bx">
                   <input 
                     type="email" 
@@ -23,8 +23,8 @@ export const Newsletter = () => {
                     onChange={(e) => setMail(e.target.value)} 
                     placeholder="Enter your email"
                   />
-                  <button type="submit">Submit</button>
                 </div>
+                  <button className="new-email-button" type="submit">Submit</button>
               </form>
             </Col>
           </Row>
